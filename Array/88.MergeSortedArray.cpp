@@ -2,9 +2,6 @@
 Note:
 You may assume that A has enough space (size that is greater or equal to m + n) to hold additional elements from B. The number of 
 elements initialized in A and B are m andn respectively.
-
- 
-
 混合插入有序数组，由于两个数组都是有序的，所有只要按顺序比较大小即可。最先想到的方法是建立一个m+n大小的新数组，然后逐个从A和B数组中取出元素比较，
 把较小的加入新数组，然后在考虑A数组有剩余和B数组有剩余的两种情况，最后在把新数组的元素重新赋值到A数组中即可。代码如下：
 */
