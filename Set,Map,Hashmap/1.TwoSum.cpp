@@ -14,10 +14,10 @@ public:
 		unordered_map<int,int> m ;
 		for(int i = 0 ; i < nums.size() ; i++){
 			int t = target - nums[i];
-			if(m.count(t))
+			if(m.count(t)) //如果存在这样的数，返回两个索引位置。
 				return {i , m[t]};
 
-			m[nums[i]] = i ;
+			m[nums[i]] = i ;//让哈希表中，第一个元素对应数组中第i个位置的数字，第二个元素对应数组中第i个元素对应的下标。
 		}
 
 		return {};
